@@ -1,6 +1,9 @@
 comp = gcc
 
-all: learnc01
+all: run
+
+run: learnc01
+	./learnc01
 
 learnc01: learnc01.o
 	 ${comp} -o learnc01 learnc01.o
